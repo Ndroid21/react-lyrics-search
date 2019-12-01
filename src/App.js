@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Provider } from './context';
 
 import Navbar from './components/layout/Navbar';
-// import Index from './components/layout/Index';
+import Index from './components/layout/Index';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <Navbar />
           <div className="container">
             <Switch>
-              <Route exact path="/" component="Index" />
+              <Route exact path="/" component={Index} />
             </Switch>
           </div>
         </React.Fragment>

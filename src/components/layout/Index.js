@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+
+import TrackList from '../tracks/TrackList';
 
 export default function Index() {
     return (
         <div>
-            Hello from Index
+            <TrackList />
         </div>
     )
 }
