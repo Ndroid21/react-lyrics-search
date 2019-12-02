@@ -5,6 +5,7 @@ import { Provider } from './context';
 
 import Navbar from './components/layout/Navbar';
 import Index from './components/layout/Index';
+import Lyrics from './components/tracks/Lyrics';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <div className="container">
             <Switch>
               <Route exact path="/" component={Index} />
+              <Route path="" component={Lyrics} />
             </Switch>
           </div>
         </React.Fragment>
