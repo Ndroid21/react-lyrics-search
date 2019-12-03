@@ -16,7 +16,7 @@ function App() {
           <div className="container">
             <Switch>
               <Route exact path="/" component={Index} />
-              <Route path="" component={Lyrics} />
+              <Route path="/lyrics/track/:id" component={Lyrics} />
             </Switch>
           </div>
         </React.Fragment>
