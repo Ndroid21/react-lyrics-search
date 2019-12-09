@@ -19,7 +19,7 @@ export default class Lyrics extends Component {
                 return axios.get(`https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`);
             })
             .then(response => {
-                console.log(response);
+                // console.log(response);
                 this.setState({ track: response.data.message.body.track });
             })
             .catch(error => console.log(error))
